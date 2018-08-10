@@ -5,8 +5,77 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header">
+      <nav class="main-nav">
+        <ul class="site-nav">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="gallery.html">Фото и Видео</a></li>
+          <li><div class="logo"></div></li>
+          <li><a href="map.html">Карта Штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+         </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <img src="img/welcom.svg" alt="Welcom to goregius">
+      <img src="img/Sedona.svg" alt="Sedona">
+      <img src="img/grand_canyon.svg" alt="Because the Grand Canyon sucks!">
+      <h1>Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+       <section class="city-features">
+         <div class="city-feature1">
+           <h3 class="feature">Настоящий городок</h3>
+           <p class="description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+           <img src="img/view.svg" height="286" width="764" alt="view">
+         </div>
+         <div class="city-feature2">
+          <h3 class="feature">Там есть мост дьявола</h3>
+          <p class="description">Да, по нему можной пройти! если конечно Вы осмелитесь</p>
+          <img src="img/bridge.svg" height="286" width="764" alt="devils-bridge">
+         </div>
+         <div class="city-feature3">
+           <h3 class="feature">Небольшая площадь</h3>
+           <p class="description">Все достопремичательности находятся очень близко</p>
+         </div>
+         <div class="city-feature4">
+           <h3 class="feature">Красивая дорога</h3>
+           <p class="description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+         </div>
+         <div class="city-feature5">
+           <h3 class="feature">Мало туристов</h3>
+           <p class="description">Большинство едет в Гранд Каньон и толпится там</p>
+         </div>
+         <div class="services hab">
+           <h3 class="feature">Жилье</h3>
+           <p class="description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+         </div>
+         <div class="services food">
+           <h3 class="feature">Еда</h3>
+           <p class="description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+         </div>
+         <div class="services souvenirs">
+           <h3 class="feature">Сувениры</h3>
+           <p class="description">не только китайского, но и местного производства!</p>
+         </div>
+       </section>
+       <section class="booking">
+         <h2>Заинтересовались?</h2>
+         <p class="offer">Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+         <p class="button">Поиск гостиницы в Седоне</p>
+         <!--Здесь будет поп-ап-->
+       </section>
+       <div class="interactive-map"></div>
+     </main>
+    <footer class="main-footer">
+        <p class="hashteg">#VISITSEDONA</p>
+        <div class="footer-social">
+          <a class="social-button" href="#">Вконтакте</a>
+          <a class="social-button" href="#">Facebook</a>
+          <a class="social-button" href="#">Youtube</a>
+        </div>
+        <a href="//htmlacademy.ru"><img src="img/HTML-logo.svg" width="50" 
+          height="50" border="0" alt="HTML-academy"></a>
+    </footer>
+   
   </body>
 </html>
