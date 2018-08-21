@@ -87,7 +87,16 @@
       <p class="booking-offer">Укажите предпологаемые даты поездки,
         <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <a href="#" class="button">Поиск гостиницы в Седоне</a>
-      <!--Здесь будет поп-ап-->
+      <form method="GET" action="https//:echo.ahtmlacademy.ru">
+        <label for="arrival-date">Дата заезда</label>
+        <input type="date" name="arrival" id="arrival-date">
+        <label for="departure-date">Дата отъезда</label>
+        <input type="date" name="departure" id="departure-date">
+        <label for="adult-count">Взрослые</label>
+        <input type="text" name="adult" id="adult-count" value="2">
+        <label for="kid-count">Дети</label>
+        <input type="text" name="kids" id="kids-count" value="0">
+        <a class="button" href="#">Найти</a>
     </div>
     <div class="interactive-map"></div>
   </div>
@@ -98,7 +107,7 @@
       <a class="social-button" href="#">Facebook</a>
       <a class="social-button" href="#">Youtube</a>
     </div>
-    <a class="developer-info" href="//htmlacademy.ru">
+    <a class="developer-info" href="http://htmlacademy.ru/intensive/htmlcss">
       <img src="img/logo-htmlacademy.svg" width="115" height="41" border="0" alt="HTML-academy">
     </a>
   </footer>

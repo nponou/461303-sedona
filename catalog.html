@@ -23,14 +23,56 @@
           <a href="catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <a class="logo" href="#"><img src="img/logo.svg" width="140" height="71" alt="Sedona"></a>
+      <a class="logo" href="index.html"><img src="img/logo.svg" width="140" height="71" alt="Sedona"></a>
     </nav>
   </header>
   <div class="page-wrapper">
     <img src="#" alt="background" width="1200" height="562">
     <section class="filters">
       <h2 class="visually-hidden">Фильтр гостиниц.</h2>
-      <!--Тут будут фильтры-->
+      <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Инфраструктура</legend>
+          <ul>
+            <li class="filter-option">
+              <input type="checkbox" name="pool" id="pool" checked>
+              <label for="pool">Бассейн</label>
+            </li>
+            <li class="filter-option">
+              <input class="visualy-hidden" type="checkbox" name="parking" id="parking">
+              <label for="parking">Парковка</label>
+            </li>
+            <li class="filter-option">
+              <input class="visualy-hidden" type="checkbox" name="wi-fi" id="wi-fi">
+              <label for="wi-fi">wi-fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visualy-hidden" type="checkbox" name="hotels" id="hotels">
+              <label for="hotels">Гостиницы</label>
+            </li>
+            <li class="filter-option">
+              <input class="visualy-hidden" type="checkbox" name="motels" id="motels">
+              <label for="motels">Мотели</label>
+            </li>
+            <li class="filter-option">
+              <input class="visualy-hidden" type="checkbox" name="apartments" id="apartments">
+              <label for="apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <input type="text" value="от 0">
+        <input type="text" value="до 3000">
+        <div class="range">
+          <span>*</span>
+          <span>*</span>
+        </div>
+        <button class="catalog-submit" type="submit" >Показать</button>
+      </form>
     </section>
     <div class="result">
       <p>Найдено:
@@ -121,7 +163,7 @@
       <a class="social-button" href="#">Facebook</a>
       <a class="social-button" href="#">Youtube</a>
     </div>
-    <a class="developer-info" href="//htmlacademy.ru">
+    <a class="developer-info" href="http://htmlacademy.ru/intensive/htmlcss">
       <img src="img/logo-htmlacademy.svg" width="115" height="41" border="0" alt="HTML-academy">
     </a>
   </footer>
