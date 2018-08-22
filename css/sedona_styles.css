@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 21px;
+  color: #333333;
+  background:#ffffff;
+  text-align: center;
+  text-transform: uppercase;
+ }
+
+a {
+  text-decoration: none;
+}
+
+.banner {
+  background-image:url("../img/background-index.jpg") ;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: aqua;
+}
+
+.main-nav-list,
+.booking-form {
+  list-style: none;
+}
+
+.main-nav {
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  background: #ffffff;
+}
+
+.main-nav-list a {
+  color: #333333
+}
+
+.page-title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+}
