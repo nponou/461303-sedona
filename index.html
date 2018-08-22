@@ -88,15 +88,30 @@
         <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <a href="#" class="button">Поиск гостиницы в Седоне</a>
       <form method="GET" action="https//:echo.ahtmlacademy.ru">
-        <label for="arrival-date">Дата заезда</label>
-        <input type="date" name="arrival" id="arrival-date">
-        <label for="departure-date">Дата отъезда</label>
-        <input type="date" name="departure" id="departure-date">
-        <label for="adult-count">Взрослые</label>
-        <input type="text" name="adult" id="adult-count" value="2">
-        <label for="kid-count">Дети</label>
-        <input type="text" name="kids" id="kids-count" value="0">
-        <a class="button" href="#">Найти</a>
+        <ul>
+          <li class="booking-date arrival">
+            <label for="arrival-date">Дата заезда</label>
+            <input type="text" name="arrival" id="arrival-date">
+            <button type="button" class="calendar">*</button>
+          </li>
+          <li class="booking-date departure">
+            <label for="departure-date">Дата отъезда</label>
+            <input type="text" name="departure" id="departure-date">
+          </li>
+          <li class="counter-adults">
+            <label for="adult-count">Взрослые</label>
+            <input type="text" name="adult" id="adult-count" value="2">
+            <button type="button" class="add">+</button>
+            <button type="button" class="reduce">-</button>
+          </li>
+          <li class="counter-kids">
+            <label for="kid-count">Дети</label>
+            <input type="text" name="kids" id="kids-count" value="0">
+            <button type="button" class="add">+</button>
+            <button type="button" class="reduce">-</button>
+          </li>
+        <button type="submit" class="button" href="#">Найти</a>
+        </ul>
     </div>
     <div class="interactive-map"></div>
   </div>
