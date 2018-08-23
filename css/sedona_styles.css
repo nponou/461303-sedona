@@ -7,8 +7,8 @@ body {
   font-weight: normal;
   font-style: normal;
   line-height: 21px;
-  color: #333333;
-  background:#ffffff;
+  color: #000000;
+  background: #ffffff;
   text-align: center;
   text-transform: uppercase;
  }
@@ -21,23 +21,35 @@ a {
   background-image:url("../img/background-index.jpg") ;
   background-repeat: no-repeat;
   background-position: top center;
-  background-color: aqua;
 }
 
 .main-nav-list,
-.booking-form {
+.booking-form-list,
+.list,
+.filter-list,
+.sort-list,
+.sort-buttons {
   list-style: none;
 }
 
 .main-nav {
   font-size: 14px;
   line-height: 26px;
-  color: #333333;
+  color: #000000;
   background: #ffffff;
+  font-weight: bold;
 }
 
 .main-nav-list a {
   color: #333333
+}
+
+.main-nav-list a:hover {
+  color: #81b3d2;
+}
+
+.main-nav-list a:active {
+  color: #0000004c;
 }
 
 .page-title {
@@ -45,4 +57,225 @@ a {
   font-weight: bold;
   line-height: 26px;
   text-align: center;
+  color: #000000;
+}
+
+.reasons {
+  line-height: 26px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.feature-block {
+  background-color: #81b3d2;
+}
+
+.feature-block-name {
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 21px;
+}
+
+.feature-block-description,
+.feature-block-number {
+color: #ffffff;
+line-height: 21px;
+}
+
+.advantages {
+  background-color: #00000000;
+}
+
+.advantage-name {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.advantage-description {
+  color: #333333;
+}
+
+.features {
+  background-color: #eeeeee;
+}
+
+.feature-name {
+color: #000000;
+font-weight: bold;
+line-height: 21px;
+font-size: 21px;
+}
+
+.feature-description,
+.feature-number {
+  color: #333333;
+  line-height: 21px;
+}
+
+.booking-headline {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #000000;
+}
+
+.booking-offer {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+a.button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+a.button:hover {
+  background-color: #604e43;
+}
+
+a.button:active {
+  background-color: #503e33;
+  color: #ffffff4c;
+}
+
+
+
+.booking-label {
+  font-size: inherit;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.booking-form input[type="text"] {
+  font: inherit;
+  color: #000000;
+  font-weight: bold;
+}
+
+.find {
+  background-color: #81b3d2;
+  color: #eeeeee;
+  border: none;
+}
+
+.find:hover {
+  background-color: #669ec0;
+}
+
+.find:active {
+  background-color: #5496bd;
+  color: #ffffff4c;
+  border: none;
+}
+
+.calendar {
+  background-image: url("../img/calendar.svg")
+}
+
+.booking-form {
+  background-image: url("../img/map.jpg");
+}
+
+a .social-button {
+  font: inherit;
+}
+
+.hashtag {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.footer-developer {
+  line-height: 26px;
+}
+
+
+.filter {
+  background-image: url("../img/catalog-background3.jpg")
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 16px;
+  text-align: left;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.filter-option{
+  color: #ffffff;
+  line-height: 21px;
+  text-align: left;
+}
+
+.catalog-submit {
+  background-color: #ffffff00;
+  border:2px solid #ffffff;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.count {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: left;
+}
+
+.sort {
+  font-size: 10.5px;
+  line-height: 17.5px;
+  text-align: left;
+}
+
+.hotel-name a {
+  color: #000000;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: left;
+}
+
+.button-blue {
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-align: left;
+}
+
+.button-blue:hover {
+  background-color: #669ec0;
+}
+
+.button-blue:active {
+  background-color: #5496bd;
+  color: #ffffff4c;
+}
+
+.button-brown {
+  color: #ffffff;
+  background-color: #766357;
+  text-align: left;
+}
+
+.button-brown:hover {
+  background-color: #604e43;
+}
+
+.button-brown:active {
+  background-color: #503e33;
+  color: #ffffff4c;
+}
+
+.rating {
+  background-color: #f2f2f2;
 }
