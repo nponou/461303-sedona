@@ -18,9 +18,12 @@ a {
 }
 
 .banner {
-  background-image:url("../img/background-index.jpg") ;
+  background-image:url("../img/intro-mask.svg"), url("../img/background-index.jpg")  ;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: bottom center, top center;
+  height: 433px;
+  width: 1200px;
+  padding-top: 76px;
 }
 
 .main-nav-list,
@@ -40,6 +43,7 @@ a {
   color: #000000;
   background: #ffffff;
   font-weight: bold;
+  box-shadow: 0px 5px 15px 0 #00010133;
 }
 
 .main-nav-list a {
@@ -54,12 +58,18 @@ a {
   color: #0000004c;
 }
 
+.page-wrapper{
+  box-shadow: 0px 5px 15px 0 #00010133;
+}
+
 .page-title {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
   text-align: center;
   color: #000000;
+  width: 440px;
+  margin:  auto;
 }
 
 .reasons {
@@ -80,8 +90,8 @@ a {
 
 .feature-block-description,
 .feature-block-number {
-color: #ffffff;
-line-height: 21px;
+  color: #ffffff;
+  line-height: 21px;
 }
 
 .advantages {
@@ -102,10 +112,10 @@ line-height: 21px;
 }
 
 .feature-name {
-color: #000000;
-font-weight: bold;
-line-height: 21px;
-font-size: 21px;
+  color: #000000;
+  font-weight: bold;
+  line-height: 21px;
+  font-size: 21px;
 }
 
 .feature-description,
@@ -198,7 +208,7 @@ font-size: 21px;
 
 
 .filter {
-  background-image: url("../img/catalog-background3.jpg")
+  background-image: url("../img/catalog-background.jpg")
 }
 
 .filter fieldset {
@@ -279,4 +289,147 @@ font-size: 21px;
 
 .rating {
   background-color: #f2f2f2;
+}
+
+/*----Сетка----*/
+
+body {
+  min-width: 1280px;
+  min-height: 2762px;
+  margin: auto;
+}
+
+.main-nav {
+  width: 1200px;
+  height: 56px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.main-nav-list {
+  height: 56px;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0px 0px 112px;
+}
+
+.logo {
+  position: relative;
+  right: 531px;
+}
+
+.page-wrapper {
+  width: 1200px;
+  height: 2762px;
+  margin: 0 auto;
+}
+
+.page-title {
+  padding-top: 59px;
+  padding-bottom: 15px;
+}
+
+.reasons {
+  padding-bottom: 36px;
+}
+
+.feature-block {
+  display: flex;
+  flex-direction: row;
+  height: 256px;
+  justify-content: space-between;
+}
+
+.feature-block-name {
+  width: 200px;
+  padding: 31px 0px 1px 100px;
+}
+
+.feature-block-number {
+  padding: 5px 0px 8px 60px;
+}
+
+.feature-block-description {
+  width: 280px;
+  padding: 0px 0px 46px 60px;
+}
+
+.feature-block-img {
+  min-width: 800px;
+  min-height: 256px;
+}
+
+.advantages {
+  display: flex;
+  height: 330px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.advantage::before {
+  display: block;
+  content: "";
+  height: 72px;
+  width: 75px;
+  background-image: url(../img/icon-1.svg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.advantage:nth-of-type(2)::before {
+  display: block;
+  content: "";
+  height: 70px;
+  width: 74px;
+  background-image: url(../img/icon-3.svg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.advantage:nth-of-type(3)::before {
+  display: block;
+  content: "";
+  height: 76px;
+  width: 64px;
+  background-image: url(../img/icon-2.svg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.advantage-description {
+  width: 252px;
+  height: 84px;
+}
+
+.advantage-description:nth-child(2) {
+  width: 284px;
+  height: 79px;
+}
+
+.features {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  height: 256px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  width: 208px;
+  height: 142px;
+  padding-top: 30px;
+}
+
+.features .feature:nth-of-type(2) {
+  width:262px ;
+  height: 142px;
+}
+
+.features .feature:nth-of-type(3) {
+  width: 246px;
+  height: 142px;
 }
