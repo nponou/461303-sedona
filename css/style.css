@@ -48,6 +48,7 @@ a {
 }
 
 .main-nav {
+
   padding: 0;
   font-size: 14px;
   line-height: 26px;
@@ -121,6 +122,7 @@ a {
 
 .advantage {
   padding: 60px 50px;
+  width: 33.33333%;
 }
 
 .advantages {
@@ -173,16 +175,23 @@ a {
   font-size: 14px;
   line-height: 24px;
   color: #333333;
-  margin-bottom: 52px;
 }
 
+.booking-wrapper {
+  position: relative;
+  width: 568px;
+  margin: 0 auto;
+}
+
+
 a.button {
+  display: block;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: #ffffff;
   background-color: #766357;
-  padding: 25px 147px 25px 148px;
+  padding: 30px 140px 30px 137px;
 }
 
 .button:hover {
@@ -195,13 +204,14 @@ a.button {
 }
 
 .booking-form {
-  padding: 10px 0px 0px 0px;
+  position: absolute;
+  top: 100;
 }
 
 .booking-form-list {
-  width: 586px;
+  width: 568px;
   min-height: 395px;
-  margin: 16px auto;
+  margin: 0 auto;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -242,8 +252,10 @@ a.button {
   background-image: url("../img/calendar.svg")
 }
 
-.booking-form {
+.interactive-map {
   background-image: url("../img/map.jpg");
+  height: 593px;
+  width: 100%;
 }
 
 
@@ -251,7 +263,12 @@ a.button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 76px 20px 132px;
+}
+
+.main-footer-opacity {
+  background-color: #ffffff;
+  opacity: 0.9;
+  margin-top: -100px;
 }
 
 .social-button {
@@ -259,9 +276,19 @@ a.button {
 }
 
 .hashtag {
+  width: 33.33333%;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+}
+
+.footer-social {
+  width: 33.33333%;
+
+}
+
+.developer {
+  width: 33.33333%;
 }
 
 .footer-developer {
@@ -273,7 +300,15 @@ a.button {
   background-image: url("../img/catalog-background.jpg");
   background-position: center -310px ;
   display: flex;
+  justify-content: space-around;
 }
+
+.price-select {
+  align-self: center;
+  margin-right: 70px;
+}
+
+
 
 .filter fieldset {
   border: none;
@@ -285,18 +320,22 @@ a.button {
   line-height: 21px;
   color: #ffffff;
   font-weight: bold;
-  padding: 31px 0px 31px 0px;
+  padding: 25px 0px 25px 0px;
 }
 
-.filter-list {
-  padding: 0px 0px 0px 112px;
+.options-list {
+  width: 20%;
+}
+
+.options-list:nth-child(2) {
+  margin-right: auto;
 }
 
 .filter-option {
   color: #ffffff;
   line-height: 21px;
   text-align: left;
-  padding-bottom: 36px;
+  padding-bottom: 30px;
 }
 
 .catalog-submit {
@@ -339,10 +378,10 @@ a.button {
   font-weight: bold;
   font-size: 16px;
   color: #ffffff;
-  text-align: left;
+  text-align: center;
 }
 
-.count:not(span) {
+.count {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -367,17 +406,23 @@ a.button {
 }
 
 .hotel-name a {
+  display: block;
   color: #000000;
   font-size: 21px;
   line-height: 26px;
   text-align: left;
-  margin: 0px 0px 17px 0px;
+  margin: -20px 0px 17px 0px;
+}
+
+.hotel-info {
+  margin-bottom:10px;
 }
 
 .button-blue {
   color: #ffffff;
   background-color: #81b3d2;
   text-align: left;
+  font-weight: bold;
 }
 
 .button-blue:hover {
@@ -393,6 +438,7 @@ a.button {
   color: #ffffff;
   background-color: #766357;
   text-align: left;
+  font-weight: bold;
 }
 
 .button-brown:hover {
@@ -404,6 +450,11 @@ a.button {
   color: #ffffff4c;
 }
 
+.hotel-stats {
+  margin-left: auto;
+  padding-right: 70px;
+}
+
 .rating {
   background-color: #f2f2f2;
 }
@@ -413,10 +464,12 @@ a.button {
 
 
 .main-nav-list {
+  position: relative;
   display: flex;
   padding: 0px 70px;
   align-items: center;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .main-nav-list li {
@@ -428,18 +481,19 @@ a.button {
   margin-right: auto;
 }
 
-.main-nav-list li:nth-of-type(2) {
-  margin-left: auto;
+.main-nav-list li:nth-child(2),
+.main-nav-list li:first-child {
+  text-align: left;
 }
 
-.main-nav-list li:last-child,
-.main-nav-list li:nth-last-child(2) {
+.main-nav-list li:nth-last-child(2),
+.main-nav-list li:last-child {
   text-align: right;
 }
 
 .logo {
   position: absolute;
-  left: 600px;
+  left: 45%;
 }
 
 
@@ -502,17 +556,8 @@ a.button {
 .feature {
   display: flex;
   flex-direction: column;
-  width: 208px;
+  width: 33.33333%;
   padding-top: 30px;
   padding-bottom: 57px;
 }
 
-.features .feature:nth-of-type(2) {
-  width:262px ;
-  height: 142px;
-}
-
-.features .feature:nth-of-type(3) {
-  width: 246px;
-  height: 142px;
-}
