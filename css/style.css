@@ -221,67 +221,81 @@ a {
 .booking-form {
   position: absolute;
   top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow:  0px 7px 15px 0 rgba(0, 1, 1, 0.149);
 }
 
 .booking-form-list {
-  width: 568px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  box-shadow:  0px 7px 15px 0 rgba(0, 1, 1, 0.149);
+  padding: 55px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .arrival {
   position: relative;
-  margin-top: 55px;
   margin-bottom: 29px;
+  display: flex;
 }
 
 .departure {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+  display: flex;
 }
 
 .calendar {
   border: none;
-  background: transparent;
+  background: #f2f2f2;
   position: absolute;
-  width: 30px;
-  height: 30px;
-  background: url("../img/calendar.svg") no-repeat 50% 50%;
+  width: 38px;
+  height: 38px;
   right: 0;
   top: 0;
+}
+
+.calendar svg {
+  fill: #cacaca;
+}
+
+.calendar:hover svg,
+.calendar:focus svg {
+  fill: #000000;
+}
+
+.calendar:active svg {
+  fill: #81b3d2;
 }
 
 .counter {
   width: 100%;
   display: flex;
-  justify-content: space-between;
 }
 
+.counter-adults {
+  width: 226px;
+}
+
+.counter-kids {
+  width: 206px;
+  margin-left: auto;
+}
 
 .counter-adults,
 .counter-kids {
   position: relative;
   display: flex;
   align-items: center;
-  width: calc(50% - 10px);
 }
 
 .input-wrapper {
   width: 114px;
-  position: absolute;
+  position: relative;
+  flex: none;
 }
 
-.counter-adults .input-wrapper {
-  left: 161px;
-}
 
-.counter-kids .input-wrapper {
-  left: 113px;
-}
 
 .input-wrapper input {
   box-sizing: border-box;
@@ -331,7 +345,7 @@ a {
 }
 
 .reduce:active::before {
-  background-color: #81b3d2;
+  background-color: rgb(129, 179, 210);
 }
 
 .add::before {
@@ -340,7 +354,6 @@ a {
   height: 12px;
   width: 3px;
   position: absolute;
-  top: 50%;
   top: 50%;
   background-color: #808080;
   transform:translate(-50%, -50%) rotate(90deg);
@@ -352,7 +365,6 @@ a {
   height: 12px;
   width: 3px;
   position: absolute;
-  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: #808080;
@@ -364,7 +376,7 @@ a {
 }
 .add:active::before,
 .add:active::after {
-  background-color: #81b3d2;
+  background-color: rgb(129, 179, 210);
 }
 
 
@@ -372,7 +384,6 @@ a {
 
 .booking-date input {
   width: 346px;
-  margin-left:21px;
   background-color: #f2f2f2;
   border: none;
   padding: 6px 0px 6px 13px;
@@ -382,16 +393,25 @@ a {
   background-color: #ffffff;
 }
 
+.counter-kids .booking-label {
+  width: 92px;
+  padding-right: 10px;
+  text-align: center;
+}
+
 .booking-label {
+  flex: none;
   position: relative;
   font-size: inherit;
   font-weight: bold;
   line-height: 26px;
+  box-sizing: border-box;
+  text-align: left;
+  width: 112px;
+  padding: 6px 10px 6px 0;
 }
 
-.counter .booking-label {
-  margin-left: 50px;
-}
+
 
 .booking-form input[type="text"] {
   font: inherit;
@@ -410,8 +430,6 @@ a {
   font-size: 21px;
   line-height: 26px;
   padding: 17px 196px 22px 195px;
-  margin-top: 54px;
-  margin-bottom: 55px;
 }
 
 .find:hover,
