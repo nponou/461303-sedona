@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -11,7 +10,7 @@ body {
   background: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  min-width: 1280px;
+  min-width: 1200px;
   margin: auto;
  }
 
@@ -22,21 +21,24 @@ a {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
   height: 1px;
-  margin: -1px;
+  width: 1px;
+  overflow: hidden;
 }
 
 
-
 .banner {
-  background-image:url("../img/intro-mask.svg"), url("../img/background-index.jpg")  ;
+  background-image:url("../img/intro-mask.svg"), url("../img/background-index.jpg");
   background-repeat: no-repeat;
-  background-position:center bottom , center -56px;
+  background-position: center 450px, center -56px;
   height: 430px;
   width: 1200px;
   padding-top: 76px;
+  background-size: 1200px auto, cover;
 }
 
 .main-nav-list,
@@ -82,7 +84,7 @@ a {
 .page-wrapper{
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0px 5px 15px 0 #00010133;
+  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .page-title {
@@ -228,7 +230,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  box-shadow:  0px 7px 15px 0 #00010126;
+  box-shadow:  0px 7px 15px 0 rgba(0, 1, 1, 0.149);
 }
 
 .arrival {
@@ -262,31 +264,38 @@ a {
 
 .counter-adults,
 .counter-kids {
+  position: relative;
+  display: flex;
+  align-items: center;
   width: calc(50% - 10px);
 }
 
+.input-wrapper {
+  width: 114px;
+  position: absolute;
+}
 
+.counter-adults .input-wrapper {
+  left: 161px;
+}
+
+.counter-kids .input-wrapper {
+  left: 113px;
+}
+
+.input-wrapper input {
+  box-sizing: border-box;
+  width: 100%;
+}
 
 .counter-kids input,
 .counter-adults input {
-  width: 38px;
   background-color: #f2f2f2;
   border: none;
   text-align: center;
-  padding: 10px 0px;
+  height: 38px;
 }
 
-.counter-kids input {
-  margin-left: 65px;
-}
-
-.counter-kids label {
-  margin-left: -90px;
-}
-
-.counter-adults label {
-  padding-right: 60px;
-}
 
 .add,
 .reduce {
@@ -294,7 +303,15 @@ a {
   border: none;
   position: absolute;
   width: 38px;
-  height: 41px;
+  height: 38px;
+}
+
+.add {
+  right: 0;
+}
+
+.reduce {
+  left: 0;
 }
 
 .reduce::before {
@@ -347,21 +364,7 @@ a {
 }
 
 
-.counter-kids .add {
-  left: 148px;
-}
 
-.counter-kids .reduce {
-  left: 72px;
-}
-
-.counter-adults .add {
-  left: 177px;
-}
-
-.counter-adults .reduce {
-  left: 101px;
-}
 
 .booking-date input {
   width: 346px;
@@ -380,6 +383,10 @@ a {
   font-size: inherit;
   font-weight: bold;
   line-height: 26px;
+}
+
+.counter .booking-label {
+  margin-left: 50px;
 }
 
 .booking-form input[type="text"] {
@@ -567,7 +574,7 @@ a {
 .catalog-submit {
   margin: 0 auto;
   display: block;
-  background-color: #ffffff00;
+  background-color: rgba(255, 255, 255, 0);
   border:2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
@@ -937,6 +944,7 @@ a {
   align-items: center;
   width: 100%;
   box-sizing: border-box;
+  min-height: 56px;
 }
 
 .main-nav-list li {
