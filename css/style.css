@@ -320,9 +320,10 @@ a {
   height: 12px;
   width: 3px;
   position: absolute;
-  top: 35%;
+  left: 50%;
+  top: 50%;
   background-color: #808080;
-  transform: rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .reduce:hover::before {
@@ -339,9 +340,10 @@ a {
   height: 12px;
   width: 3px;
   position: absolute;
-  top: 35%;
+  top: 50%;
+  top: 50%;
   background-color: #808080;
-  transform: rotate(90deg);
+  transform:translate(-50%, -50%) rotate(90deg);
 }
 
 .add::after {
@@ -350,7 +352,9 @@ a {
   height: 12px;
   width: 3px;
   position: absolute;
-  top: 35%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: #808080;
 }
 
