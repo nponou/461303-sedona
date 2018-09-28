@@ -134,12 +134,11 @@ a {
   display: block;
   margin: 0 auto;
   width: 320px;
-  letter-spacing: 0.2px;
 }
 
 .advantage {
   position: relative;
-  padding: 143px 50px 67px 50px;
+  padding: 143px 50px 69px 50px;
   width: 33.33333%;
 }
 
@@ -167,7 +166,6 @@ a {
   display: flex;
   align-items: baseline;
   justify-content: space-around;
-  min-height: 256px;
   margin-bottom: 50px;
 }
 
@@ -215,7 +213,7 @@ a {
   line-height: 24px;
   color: #333333;
   margin: 0;
-  padding: 23px 0 0 0;
+  padding: 27px 0 0 0;
 }
 
 .booking-wrapper {
@@ -748,6 +746,11 @@ a {
   text-transform: inherit;
 }
 
+.buttons.active {
+  color: #81b3d2;
+  border: none;
+}
+
 .buttons:hover,
 .buttons:focus {
   color: #81b3d2;
@@ -788,6 +791,10 @@ a {
   outline: none;
 }
 
+.sort-button.sort-active polyline {
+  fill: rgb(129, 179, 210);
+}
+
 .decreasing {
   margin-left: 12px;
 }
@@ -812,6 +819,10 @@ a {
 .list {
   display: flex;
   flex-direction: column;
+}
+
+.hotels {
+  margin-bottom: 4px;
 }
 
 .hotel {
@@ -905,7 +916,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 300px;
-
 }
 
 .hotel-info {
